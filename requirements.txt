@@ -1,0 +1,12 @@
+pandas
+torch
+torch-geometric
+spacy
+scikit-learn
+pyyaml
+transformers
+networkx
+tqdm
+flask
+flask-cors
+nltk

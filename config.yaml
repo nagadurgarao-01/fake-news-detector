@@ -1,0 +1,14 @@
+model:
+  learning_rate: 0.00002  # Lower LR for BERT fine-tuning
+  dropout_rate: 0.3
+  num_epochs: 5
+  batch_size: 16          # Optimized for RTX 3050 6GB (64 causes OOM)
+  gnn_entity_embedding_dim: 64
+  early_stopping_patience: 3
+  early_stopping_delta: 0.001
+
+data:
+  test_size: 0.2
+  random_state: 42
+  min_text_length: 20
+  max_sequence_length: 256 # Reduced from 512 to save memory
